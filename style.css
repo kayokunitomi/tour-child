@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/*
+Theme Name: tour-child
+Template: tour
+Author: Kayo
+version： 2.0.0
+*/
+/*cssのリセット*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+figcaption, figure, footer, header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+body {
+  letter-spacing: .4px;
+  font-family: Noto, Hiragino Sans,Helvetica,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  text-decoration: none;
+  color: #000;
+  background-color: #ff9;
+}
+
+mark {
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+  background-color: #ff9;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*サイト全体の基準となるCSSを記述*/
+html {
+  font-size: 17px;
+}
+
+body {
+  /*フォントの指定*/
+  font-family:  "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "MS P Gothic", "ＭＳ Ｐゴシック", sans-serif;
+  /*行間の指定*/
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  /*サイトのデフォルトとなる文字の色を指定*/
+  color: #333;
+  letter-spacing: .4px;
+}
+
+/*見出しを全て太字で表示 + 文字色を黒に*/
+/* h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+} */
+
+
+/*サイト開始*/
+/*ヘッダーここから*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.upper {
+  background-color: #162e44;
+}
+
+.date-weather {
+  color: #151515;
+}
+
+.small-info {
+  color: #90caf9;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.middle-right .far, .fas {
+  color: #01b3a7;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+
+
+.middle .logo {
+  float: left;
+  margin-top: 10px;
+}
+
+.middle-right {
+  float: right;
+  padding-top: 17px;
+}
+
+.middle-right .phone {
+    padding-left: 25px;
+    border-left: 1px solid #e1e1e1;
+}
+
+.middle-right li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+
+/*メニュー*/
+.menu {
+  background-color: #162e44;
+}
+
+.menu-list {
+  font-size: 0;
+  float: right;
+}
+
+.menu li {
+  display: inline-block;
+  color: white;
+  font-size: 17px;
+  padding-left: 45px;
+  font-weight: 600;
+}
+
+
+/*トップラッパー*/
+.top-wrapper {
+  background-image: url("../img/bg11.jpg");
+  background-size: cover;
+  background-position: center bottom 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 745px;
+}
+
+.message h6, h2, a {
+  color: white;
+}
+
+.message h6 {
+  font-size: 15px;
+}
+
+.message h2 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ツアー選び*/
+.tours {
+  background-color: skyblue;
+  height: 300px;
+}
+
+/*おすすめ*/
+.recommended {
+  background-color: pink;
+  height: 600px;
+}
+
+/*新着情報*/
+.news {
+  background-color: green;
+  height: 600px;
+}
+
+/*予約ここから*/
+.booking {
+  background-image: url("../img/bg12.jpg");
+  background-size: cover;
+  background-position: center top 15%;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/*カンパニー紹介*/
+.about {
+  background-color: yellow;
+  height: 400px;
+}
+
+/*フッター*/
+footer {
+  /* background-color: pink; */
+  height: 1000px;
+}
+
+/*良いポイント*/
+.points {
+  background-color: grey;
+  height: 300px;
+}
+
+/*会社情報*/
+.company {
+  background-color: skyblue;
+  height: 250px;
+  float: left;
+  width: 35%;
+}
+/*サイト内リンク*/
+.link {
+  background-color: red;
+  height: 250px;
+}
+
+.copy-right {
+  background-color: blue;
+  height: 200px;
+}
+
+/*お問い合わせページ*/
+
+.top-wrapper2 {
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 30%;
+  width: 100%;
+  height: 450px;
+}
+
+.contact .container {
+  text-align: center;
+}
+
+.headline {
+  font-size: 29px;
+  line-height: normal;
+  padding-top: 60px;
+}
+.small-headline {
+  font-weight: bold;
+  line-height: normal;
+  padding-bottom: 40px;
+}
+
+.mail {
+  padding-top: 45px;
+}
+
+.mail .container {
+  max-width: 45%;
+}
+
+.name, .tel, .email, .email-title {
+  font-size: 17px;
+  width: 100%;
+  padding: 12px 0 12px 10px;
+  margin-bottom: 30px;
+}
+
+.content {
+  font-size: 17px;
+  width: 100%;
+  padding: 12px 0 0 10px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.text-center button {
+  padding: 5px 60px;
+  font-size: 17px;
+}
+
+.notice {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+  padding: 15px;
+  font-size: 14px;
+}
+
+
+/*ーーーー会社案内ここからーーー*/
+
+.boss-message .boss{
+float: left;
+}
+
+.boss-message {
+  padding-top: 50px;
+}
+
+.boss-message img {
+  width: 320px;
+  margin-right: 40px;
+}
+
+.info {
+  width: 100%;
+}
+
+.company-detail {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+hr {
+  width: 68%;
+  margin: 30px auto 45px;
+}
+
+.office1, .office2 {
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+/*ーーーー予約の流れーーー*/
+
+.reserve .container {
+  width: 60%;
+}
+
+.box img {
+  width: 300px;
+  height: 260px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.flow {
+  font-weight: bold;
+  color: white;
+  background-color: skyblue;
+  margin-bottom: 40px;
+}
+
+.headline, .small-headline {
+  text-align: center;
+}
+
+.box h2 {
+color: #333;
+}
+
+ .box {
+   display: flex;
+   margin-bottom: 80px;
+
+ }
+
+.detail {
+  padding: 20px 30px 0;
+}
+
+.box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.accordion {
+  background-color: pink;
+  height: 200px
+}
+
+
+@media(max-width: 600px) {
+  /* html {
+    font-size: 15px;
+  }
+
+  .header-inner,
+  .container,
+  .footer-inner {
+    padding: .8rem;
+  }
+
+  .contents {
+    margin-bottom: 1rem;
+  } */
+}
